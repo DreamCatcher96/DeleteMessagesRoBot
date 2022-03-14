@@ -85,7 +85,7 @@ GIT_REPO_LINK = "https://t.me/OttHelpBot"
 START_MESSAGE = get_config("START_MESSAGE", (
     "<b>Hai 👋 I'm A Bot That Can Delete All Your Channel Or SuperGroup Messages 😍</b>"
     "\n\n"
-    "<b>To Use Me ⚠️ :</b>
+    "<b>To Use Me ⚠️ :</b>"
     "\n\n"
     "<b>1⃣ Add Me To The Channel / SuperGroup As Admin (With Atleast Delete Message , Add User's/Invite User's & Add New Admins Permissions)</b>"
     "\n\n"
@@ -100,7 +100,7 @@ START_MESSAGE = get_config("START_MESSAGE", (
 START_COMMAND = get_config("START_COMMAND", "start")
 DEL_ALL_COMMAND = get_config("DEL_ALL_COMMAND", "delall")
 BEGINNING_DEL_ALL_MESSAGE = get_config("BEGINNING_DEL_ALL_MESSAGE", (
-    "trying to delete all messages"
+    "<b>🔄 Trying to Delete All Messages 🗑️</b>"
 ))
 IN_CORRECT_PERMISSIONS_MESSAGE = get_config("IN_CORRECT_PERMISSIONS_MESSAGE", (
     "<b>Something Went Wrong 🤔</b> \n\n"
