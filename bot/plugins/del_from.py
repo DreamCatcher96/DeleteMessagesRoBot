@@ -48,8 +48,8 @@ async def del_from_command_fn(client: Bot, message: Message):
     ] = message.reply_to_message.message_id
     if status_message:
         await status_message.edit_text(
-            "saved starting message_id. "
-            "https://github.com/SpEcHiDe/DeleteMessagesRoBot"
+            "<b>Saved Starting message_id ✅</b> "
+           
         )
         await status_message.delete()
     await message.delete()
