@@ -80,7 +80,7 @@ def LOGGER(name: str) -> logging.Logger:
 
 
 REQD_PERMISSIONS = "https://te.legra.ph/file/924cb1c25094dd1d41238.jpg"
-GIT_REPO_LINK = "https://t.me/OttHelpBot"
+GIT_REPO_LINK = "@OTTHelpBot"
 """ strings to be used in the bot """
 START_MESSAGE = get_config("START_MESSAGE", (
     "<b>Hai 👋 I'm A Bot That Can Delete All Your Channel Or SuperGroup Messages 😍</b>"
@@ -91,11 +91,11 @@ START_MESSAGE = get_config("START_MESSAGE", (
     "\n\n"
     "<b>2⃣ Send <code>/delall</code> if You Want All The Messages To Be Deleted.</b>"
     "\n\n"
-    "<b>3⃣ Ifu Want Delete Selected Messages ? Reply The Beginning Message <code>/delfrom</code> , Reply The End Message <code>/delto</code> , Finally Send <code>/delsel</code> then U can See Deleting all You Selected Messages 😁<b>"
+    "<b>3⃣ Ifu Want Delete Selected Messages ? Reply The Beginning Message <code>/delfrom</code> , Reply The End Message <code>/delto</code> , Finally Send <code>/delsel</code> then U can See Deleting all You Selected Messages 😁</b>"
     "\n\n"
-    f"<b>Check Admin Permission 👉 : {REQD_PERMISSIONS}</b>"
+    f"<b>Check Permission : {REQD_PERMISSIONS}</b>"
     "\n\n"
-    f"<b>In Case Of Issues, Contact : {GIT_REPO_LINK}</b>"
+    f"<b>Contact Admin : {GIT_REPO_LINK}</b>"
 ))
 START_COMMAND = get_config("START_COMMAND", "start")
 DEL_ALL_COMMAND = get_config("DEL_ALL_COMMAND", "delall")
@@ -111,7 +111,7 @@ IN_CORRECT_PERMISSIONS_MESSAGE = get_config("IN_CORRECT_PERMISSIONS_MESSAGE", (
 ))
 SEL_DEL_COMMAND = get_config("SEL_DEL_COMMAND", "seldel")
 BEGINNING_SEL_DEL_MESSAGE = get_config("BEGINNING_SEL_DEL_MESSAGE", (
-    "<b>🔄 Trying to Delete Your Selected Messages 🗑️"
+    "<b>🔄 Trying to Delete Your Selected Messages 🗑️</b>"
 ))
 DEL_FROM_COMMAND = get_config("DEL_FROM_COMMAND", "delfrom")
 DEL_TO_COMMAND = get_config("DEL_TO_COMMAND", "delto")
