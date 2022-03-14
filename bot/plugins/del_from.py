@@ -35,7 +35,7 @@ from bot.helpers.custom_filter import allowed_chat_filter
 async def del_from_command_fn(client: Bot, message: Message):
     try:
         status_message = await message.reply_text(
-            "trying to save starting message_id"
+            "<b>♻️ Trying to Save Starting message_id </b>"
         )
     except ChatAdminRequired:
         status_message = None
@@ -48,8 +48,7 @@ async def del_from_command_fn(client: Bot, message: Message):
     ] = message.reply_to_message.message_id
     if status_message:
         await status_message.edit_text(
-            "<b>Saved Starting message_id ✅</b> "
-           
+            "<b>Saved Starting message_id ✅</b> "         
         )
         await status_message.delete()
     await message.delete()
