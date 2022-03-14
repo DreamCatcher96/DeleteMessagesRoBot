@@ -93,7 +93,7 @@ START_MESSAGE = get_config("START_MESSAGE", (
     "\n\n"
     "<b>3⃣ Ifu Want Delete Selected Messages ? Reply The Beginning Message <code>/delfrom</code> , Reply The End Message <code>/delto</code> , Finally Send <code>/seldel</code> then U can See Deleting all You Selected Messages 😁</b>"
     "\n\n"
-    f"<b>Check Permission : {REQD_PERMISSIONS}</b>"
+    "<b>Check Permission : <a href='https://te.legra.ph/file/924cb1c25094dd1d41238.jpg'> CLICK HERE</a></b>"
     "\n\n"
     f"<b>Contact Admin : {GIT_REPO_LINK}</b>"
 ))
