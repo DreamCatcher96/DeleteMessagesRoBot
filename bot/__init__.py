@@ -79,17 +79,21 @@ def LOGGER(name: str) -> logging.Logger:
     return logging.getLogger(name)
 
 
-REQD_PERMISSIONS = "1⃣ Add Me To The Channel / SuperGroup As Admin (With Atleast Delete Message , Add Users & Add New Admins This 3 Permissions)
-
-2⃣ Send /delall if You Want All The Messages To Be Deleted.
-
-3⃣ Ifu Want Delete Selected Messages ? Reply The Beginning Message /delfrom , Reply The End Message /delto , Finally Send /delsel then U can See Deleting all You Selected Messages."
+REQD_PERMISSIONS = "https://te.legra.ph/file/924cb1c25094dd1d41238.jpg"
 GIT_REPO_LINK = "https://t.me/OttHelpBot"
 """ strings to be used in the bot """
 START_MESSAGE = get_config("START_MESSAGE", (
     "<b>Hai 👋 I'm A Bot That Can Delete All Your Channel Or SuperGroup Messages 😍</b>"
     "\n\n"
-    f"<b>To Use Me ⚠️ :\n\n {REQD_PERMISSIONS}</b>"
+    "<b>To Use Me ⚠️ :</b>
+    "\n\n"
+    "<b>1⃣ Add Me To The Channel / SuperGroup As Admin (With Atleast Delete Message , Add User's/Invite User's & Add New Admins Permissions)</b>"
+    "\n\n"
+    "<b>2⃣ Send <code>/delall</code> if You Want All The Messages To Be Deleted.</b>"
+    "\n\n"
+    "<b>3⃣ Ifu Want Delete Selected Messages ? Reply The Beginning Message <code>/delfrom</code> , Reply The End Message <code>/delto</code> , Finally Send <code>/delsel</code> then U can See Deleting all You Selected Messages 😁<b>"
+    "\n\n"
+    f"<b>Check Admin Permission 👉 : {REQD_PERMISSIONS}</b>"
     "\n\n"
     f"<b>In Case Of Issues, Contact : {GIT_REPO_LINK}</b>"
 ))
@@ -99,28 +103,27 @@ BEGINNING_DEL_ALL_MESSAGE = get_config("BEGINNING_DEL_ALL_MESSAGE", (
     "trying to delete all messages"
 ))
 IN_CORRECT_PERMISSIONS_MESSAGE = get_config("IN_CORRECT_PERMISSIONS_MESSAGE", (
-    "something went wrong. \n\n"
+    "<b>Something Went Wrong 🤔</b> \n\n"
     "<code>{}</code>"
     "\n\n"
-    f"please verify <a href='{REQD_PERMISSIONS}'>all permissions</a>, "
-    "and try again after sometime."
+    f"<b>Please Verify <a href='{REQD_PERMISSIONS}'> All Permissions Is Correct</a>, "
+    "<b>And Try Again After Sometime.</b>"
 ))
 SEL_DEL_COMMAND = get_config("SEL_DEL_COMMAND", "seldel")
 BEGINNING_SEL_DEL_MESSAGE = get_config("BEGINNING_SEL_DEL_MESSAGE", (
-    "trying to delete your selected messages"
+    "<b>🔄 Trying to Delete Your Selected Messages 🗑️"
 ))
 DEL_FROM_COMMAND = get_config("DEL_FROM_COMMAND", "delfrom")
 DEL_TO_COMMAND = get_config("DEL_TO_COMMAND", "delto")
 NOT_USED_DEL_FROM_DEL_TO_MESSAGE = get_config(
     "NOT_USED_DEL_FROM_DEL_TO_MESSAGE", (
-        f"please use /{DEL_FROM_COMMAND} or /{DEL_TO_COMMAND} "
-        f"before using /{SEL_DEL_COMMAND}"
+        f"<b>Please Use /{DEL_FROM_COMMAND} or /{DEL_TO_COMMAND}</b>"
+        f"<b>Before Using /{SEL_DEL_COMMAND}</b>"
     )
 )
 THANK_YOU_MESSAGE = get_config(
     "THANK_YOU_MESSAGE", (
-        "Thank You for using me, "
-        f"Join {REQD_PERMISSIONS} to support this Telegram Bot"
+        "<b>Thank You for Using Me 😍 \n\nSey Thanks My Boss : @WhitE_DeviL09</b>"
     )
 )
 TL_FILE_TYPES = (
