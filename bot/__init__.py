@@ -91,7 +91,7 @@ START_MESSAGE = get_config("START_MESSAGE", (
     "\n\n"
     "<b>2⃣ Send <code>/delall</code> if You Want All The Messages To Be Deleted.</b>"
     "\n\n"
-    "<b>3⃣ Ifu Want Delete Selected Messages ? Reply The Beginning Message <code>/delfrom</code> , Reply The End Message <code>/delto</code> , Finally Send <code>/delsel</code> then U can See Deleting all You Selected Messages 😁</b>"
+    "<b>3⃣ Ifu Want Delete Selected Messages ? Reply The Beginning Message <code>/delfrom</code> , Reply The End Message <code>/delto</code> , Finally Send <code>/seldel</code> then U can See Deleting all You Selected Messages 😁</b>"
     "\n\n"
     f"<b>Check Permission : {REQD_PERMISSIONS}</b>"
     "\n\n"
@@ -100,7 +100,7 @@ START_MESSAGE = get_config("START_MESSAGE", (
 START_COMMAND = get_config("START_COMMAND", "start")
 DEL_ALL_COMMAND = get_config("DEL_ALL_COMMAND", "delall")
 BEGINNING_DEL_ALL_MESSAGE = get_config("BEGINNING_DEL_ALL_MESSAGE", (
-    "<b>🔄 Trying to Delete All Messages 🗑️</b>"
+    "<b>Trying to Delete All Messages 🗑️</b>"
 ))
 IN_CORRECT_PERMISSIONS_MESSAGE = get_config("IN_CORRECT_PERMISSIONS_MESSAGE", (
     "<b>Something Went Wrong 🤔</b> \n\n"
